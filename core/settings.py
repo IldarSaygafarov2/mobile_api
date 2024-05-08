@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-yuh&8g8_g)y*c*u_gf%nl$-5nbvr$9+y^8jkbco_%08ftuu#4n
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['testmobileapi.pythonanywhere.com']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

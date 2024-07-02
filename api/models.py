@@ -23,6 +23,6 @@ class Photo(models.Model):
 
 
 class PhotoItem(models.Model):
-    photo = models.ForeignKey(Photo, on_delete=models.CASCADE)
+    photo = models.ForeignKey(Photo, on_delete=models.CASCADE, related_name='photo_items')
     image = models.ImageField(upload_to='images/')
 

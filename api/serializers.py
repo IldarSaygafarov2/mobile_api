@@ -18,7 +18,8 @@ class PhotoItemSerializer(serializers.ModelSerializer):
 class PhotoSerializer(serializers.ModelSerializer):
     photo_items = PhotoItemSerializer(many=True, read_only=True)
     uploaded_images = serializers.ListField(
-        child=serializers.ImageField(allow_empty_file=False, use_url=False), write_only=True
+        child=serializers.ImageField(allow_empty_file=False, use_url=False),
+        write_only=True
     )
 
     class Meta:

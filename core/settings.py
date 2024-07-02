@@ -39,7 +39,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
-
+CSRF_TRUSTED_ORIGINS = ['https://test-admin.uz']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

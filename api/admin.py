@@ -12,4 +12,3 @@ class PhotoAdmin(admin.ModelAdmin):
 
 
 admin.site.register(models.PDFFile)
-admin.site.register(models.Photo, PhotoAdmin)
